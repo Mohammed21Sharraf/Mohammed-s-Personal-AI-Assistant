@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+openai
+pinecone-client
+pydantic
+python-dotenv
+pypdf
+beautifulsoup4
+deepseek
+faiss-cpu
+langchain-core
+langchain-community
+langchain-groq
+requests
+streamlit
+
