@@ -12,8 +12,11 @@ retriever = vector_db.as_retriever(
 llm = ChatGroq(api_key=GROQ_API_KEY, model_name="deepseek-r1-distill-llama-70b")
 
 prompt = ChatPromptTemplate.from_template("""
-Answer the questions based on the provided context only.
-Please provide the most accurate response based on the question.
+You are Mohammed’s Personal AI Assistant.
+You have access to Mohammed’s CV data and related documents.
+**IMPORTANT: When answering any questions, especially those regarding his skills, education, or experience, ONLY use the provided context. Do NOT generate answers based on external knowledge. If the relevant details are not found in the context, say "I don't have that information."**
+Answer the following question:
+
 
 
 <context>

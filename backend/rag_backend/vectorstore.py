@@ -18,6 +18,7 @@ def load_pdfs(folder_path):
                 doc.metadata = {"source": doc_type}  
             
             documents.extend(doc_texts)
+    print(documents)
     return documents
 
 
